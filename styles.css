@@ -1,0 +1,308 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.mobile, .icon {
+  display: none;
+}
+
+/* Common Properties */
+.navbar, .header, .heading-image, .graphic-photography {
+  width: 100%;
+}
+
+.nav-item, .deco-para, .about-para, .footer-nav {
+  font-family: 'Barlow', sans-serif;
+}
+
+.learn, .deco-heading, .about-heading, .main-heading, .testi-heading {
+  font-family: 'Fraunces', serif;
+}
+
+.navbar {
+  padding: 30px 30px 0 30px;
+}
+
+.testimonals1, .graphic-photography, .main-heading, .footer-logo, .social-icon-div, .footer-nav {
+  text-align: center;
+}
+
+.rows, .images-gp, .graphic-photography, .testimonals1, .images-deco {
+  display: flex;
+}
+
+.about, .about-image, .decoration {
+  width: 50%;
+}
+
+/* Heading Section */
+.header {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.nav-logo {
+  padding: 15px 0;
+}
+
+.navbar ul {
+  float: right;
+}
+
+ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  color: white;
+}
+
+li {
+  padding: 15px 30px;
+}
+
+.icon-arrow {
+  position: absolute;
+  margin: 100px 0 0;
+  left: 49%;
+}
+
+.nav-item1 {
+  color: black;
+  background-color: white;
+  border-radius: 50px;
+  font-weight: 900;
+}
+
+
+.nav-item1:hover {
+  background-color: #B5EAEA;
+}
+
+.main-heading {
+  margin: 0;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: white;
+  padding-top: 100px;
+}
+
+/* Body */
+/* about */
+.about {
+  padding: 10%;
+}
+
+.about-heading {
+  font-weight: 900;
+  font-size: 3rem;
+  color: hsl(212, 27%, 19%);
+}
+
+.about-para {
+  color: hsl(213, 9%, 39%);
+  margin-bottom: 50px;
+}
+
+/* graphic and photography */
+.positioning {
+  position: relative;
+}
+
+.graphic-photography {
+  position: absolute;
+  bottom: 0;
+}
+
+.decoration {
+  padding: 5% 13%;
+}
+
+.gd {
+  color: hsl(167, 40%, 24%);
+}
+
+.py {
+  color: hsl(198, 62%, 26%);
+}
+
+/* TESTIMONALS */
+.testimonals {
+  padding: 7% 15%;
+}
+
+.testi-heading {
+  color: hsl(210, 4%, 67%);
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.testimonals1 {
+  justify-content: space-around;
+}
+
+.testi {
+  margin: 0 10px;
+  width: 33%;
+}
+
+.testi-images {
+  margin: 40px 0;
+  width: 75px;
+  border-radius: 100%;
+}
+
+/* Decoration images */
+.deco-image {
+  width: 25%;
+}
+
+/* Footer */
+.footer {
+  padding: 5% 5% 3%;
+  background-color: rgb(139 203 190);
+}
+
+.footer-logo {
+  font-family: 'Hind Siliguri', sans-serif;
+  color: #3A6351;
+  font-size: 2rem;
+}
+
+.footer-item {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: hsl(168, 34%, 41%);
+  padding: 20px;
+}
+
+.social-icon {
+  margin: 50px 20px;
+  color: #3A6351;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  /* Common Properties */
+  .rows, .images-gp, .graphic-photography {
+    flex-direction: column;
+  }
+
+  .rows, .about, .about-image, .decoration, .testimonals1, .testi {
+    width: 100%;
+  }
+
+  .rows, .images-gp, .graphic-photography, .testimonals1, .images-deco {
+    flex-wrap: wrap;
+  }
+
+  /* Navbar */
+  .nav-item, .nav-item1 {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 0;
+  }
+
+
+  .nav-item1 {
+    background-color: yellow;
+  }
+
+  .main-heading {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    padding-top: 50px;
+  }
+
+  .icon-arrow {
+    margin: 25px 0 0;
+    left: 47%;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-para {
+    margin: 0 auto 20px;
+  }
+
+  .graphic-photography {
+    bottom: 50px;
+  }
+
+  .learn {
+    margin: 0 0 10px;
+    padding: 0;
+  }
+
+  .testimonals {
+    padding: 7%;
+  }
+
+  .testi-heading {
+    font-size: 1.1rem;
+  }
+
+  .testi {
+    margin: 10px 0;
+  }
+
+  .deco-image {
+    width: 50%;
+  }
+  .icon-opa {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ul{
+  margin: 0 10%;
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  background-color: white;
+  color: hsl(210, 4%, 67%);
+  z-index: 1;
+  text-align: center;
+}
+  .responsive {
+    display: flex;
+  }
+  .nav-item,.nav-item1 {
+    margin: 5px 30%;
+
+  }
+}
